@@ -1,30 +1,15 @@
-const age = 18;
-
-const getWife = () => '高圆圆'
-
-const obj = {
-  color: 'pink'
-}
+const list = [
+  { name: "刘亦菲", id: 1 },
+  { name: "高圆圆", id: 2 },
+  { name: "周子琰", id: 3 },
+];
 
 function App() {
   return (
     <div className="App">
-      {/* 普通字符串 */}
-      {"hi"}
-
-      {/* 变量 */}
-      {age}
-
-      {/* 函数调用 */}
-      {getWife()}
-
-      {/* 调用内置方法 */}
-      {new Date().getFullYear()}
-
-      {/* 使用对象 */}
-      <div style={obj}>
-        文字颜色：{obj.color}
-      </div>
+      {list.map((item) => {
+        return <div key={item.id}>{item.name}</div>;
+      })}
     </div>
   );
 }
