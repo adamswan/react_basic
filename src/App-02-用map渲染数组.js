@@ -1,4 +1,4 @@
-const list = [
+const arr = [
   { name: "刘亦菲", id: 1 },
   { name: "高圆圆", id: 2 },
   { name: "周子琰", id: 3 },
@@ -7,9 +7,11 @@ const list = [
 function App() {
   return (
     <div className="App">
-      {list.map((item) => {
-        return <div key={item.id}>{item.name}</div>;
-      })}
+      <ul>
+        {arr.map((item) => {
+          return <li key={item.id}>{item.name}</li>;
+        })}
+      </ul>
     </div>
   );
 }

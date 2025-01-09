@@ -6,15 +6,19 @@ function App() {
 
   const handler = () => {
     // 使用 setCount 修改 count
-    setCount(count + 1);
+    let newVal = count + 1
+    setCount(newVal);
   };
 
   return (
     <div className="App">
       <button onClick={handler}>点我加1</button>
+      
       <div>值：{count}</div>
     </div>
   );
 }
 
 export default App;
+
+// App-08-响应式数据-基本类型

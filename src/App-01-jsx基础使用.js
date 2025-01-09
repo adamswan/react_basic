@@ -1,10 +1,10 @@
 const age = 18;
 
-const getWife = () => '高圆圆'
+const getWife = () => "高圆圆";
 
 const obj = {
-  color: 'pink'
-}
+  color: "pink",
+};
 
 function App() {
   return (
@@ -22,9 +22,7 @@ function App() {
       {new Date().getFullYear()}
 
       {/* 使用对象 */}
-      <div style={obj}>
-        文字颜色：{obj.color}
-      </div>
+      <div style={obj}>粉色</div>
     </div>
   );
 }
